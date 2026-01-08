@@ -1,10 +1,10 @@
-# Django Blog Platform API
+# **Django Blog Platform API**
 
-A full-featured blogging platform built with Django and Django REST Framework, featuring user authentication, post management, commenting, tagging, and search functionality.
+**A full-featured blogging platform built with Django and Django REST Framework, featuring user authentication, post management, commenting, tagging, and search functionality.**
 
 ---
 
-## 🚀 Features
+## **🚀 Features**
 
 ### **Core Functionality**
 ✅ **User registration and authentication**  
@@ -29,7 +29,7 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 
 ---
 
-## 🛠️ Technologies Used
+## **🛠️ Technologies Used**
 
 - **Backend:** Django 4.2  
 - **Database:** SQLite (development)  
@@ -40,7 +40,7 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 
 ---
 
-## 📋 Prerequisites
+## **📋 Prerequisites**
 
 - **Python 3.8 or higher**
 - **pip (Python package manager)**
@@ -48,233 +48,233 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 
 ---
 
-## 🛠️ Installation & Setup
+## **🛠️ Installation & Setup**
 
 ### **1. Clone the repository**
 
-git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git  
-cd Alx_DjangoLearnLab/django_blog  
+**git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git**  
+**cd Alx_DjangoLearnLab/django_blog**  
 
 ---
 
 ### **2. Create virtual environment**
 
-python -m venv venv  
+**python -m venv venv**  
 
 **On Windows**
 
-venv\Scripts\activate  
+**venv\Scripts\activate**  
 
 **On Mac/Linux**
 
-source venv/bin/activate  
+**source venv/bin/activate**  
 
 ---
 
 ### **3. Install dependencies**
 
-pip install -r requirements.txt  
+**pip install -r requirements.txt**  
 
 ---
 
 ### **4. Apply migrations**
 
-python manage.py makemigrations  
-python manage.py migrate  
+**python manage.py makemigrations**  
+**python manage.py migrate**  
 
 ---
 
 ### **5. Create superuser (admin)**
 
-python manage.py createsuperuser  
+**python manage.py createsuperuser**  
 
-Follow the prompts to create your admin account.
+**Follow the prompts to create your admin account.**
 
 ---
 
 ### **6. Run the development server**
 
-python manage.py runserver  
+**python manage.py runserver**  
 
 ---
 
 ### **7. Access the application**
 
-Homepage: http://127.0.0.1:8000/  
-Posts List: http://127.0.0.1:8000/posts/  
-Admin Panel: http://127.0.0.1:8000/admin/
+**Homepage: http://127.0.0.1:8000/**  
+**Posts List: http://127.0.0.1:8000/posts/**  
+**Admin Panel: http://127.0.0.1:8000/admin/**
 
 ---
 
-📖 Usage Guide
+## **📖 Usage Guide**
 
-For Users
+### **For Users**
 
-Register an Account
+**Register an Account**
 
-Click Register in the navigation
+**Click Register in the navigation**
 
-Fill in username, email, and password
+**Fill in username, email, and password**
 
-You’ll be automatically logged in
-
-
-Create a Post
-
-Click New Post after logging in
-
-Enter title, content, and tags (comma-separated)
-
-Click Create Post
+**You'll be automatically logged in**
 
 
-Comment on Posts
+**Create a Post**
 
-Open any post
+**Click New Post after logging in**
 
-Scroll to the comments section
+**Enter title, content, and tags (comma-separated)**
 
-Write your comment and click Post Comment
-
-
-Search for Posts
-
-Use the search bar in the navigation
-
-Search by title, content, or tags
+**Click Create Post**
 
 
-Filter by Tags
+**Comment on Posts**
 
-Click any tag badge to see all posts with that tag
+**Open any post**
 
+**Scroll to the comments section**
 
-For Administrators
-
-Access the admin panel at /admin/ to:
-
-Manage all users
-
-Moderate posts and comments
-
-View system statistics
+**Write your comment and click Post Comment**
 
 
+**Search for Posts**
 
----
+**Use the search bar in the navigation**
 
-🗂️ Project Structure
-
-django_blog/
-├── django_blog/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── blog/
-│   ├── models.py
-│   ├── views.py
-│   ├── forms.py
-│   ├── urls.py
-│   ├── admin.py
-│   ├── templates/
-│   │   └── blog/
-│   └── static/
-├── manage.py
-├── requirements.txt
-└── README.md
+**Search by title, content, or tags**
 
 
----
+**Filter by Tags**
 
-🔌 API Endpoints
+**Click any tag badge to see all posts with that tag**
 
-Endpoint	Method	Description	Auth Required
 
-/register/	GET, POST	User registration	No
-/login/	GET, POST	User login	No
-/logout/	POST	User logout	Yes
-/profile/	GET, POST	View/edit profile	Yes
-/posts/	GET	List all posts	No
-/post/new/	GET, POST	Create new post	Yes
-/post/<id>/	GET	View single post	No
-/post/<id>/update/	GET, POST	Update post	Yes (Author)
-/post/<id>/delete/	GET, POST	Delete post	Yes (Author)
-/search/	GET	Search posts	No
-/tags/<slug>/	GET	Filter by tag	No
+### **For Administrators**
+
+**Access the admin panel at /admin/ to:**
+
+**Manage all users**
+
+**Moderate posts and comments**
+
+**View system statistics**
 
 
 
 ---
 
-🧪 Testing
+## **🗂️ Project Structure**
 
-Create test users through registration
+**django_blog/**
+**├── django_blog/**
+**│   ├── settings.py**
+**│   ├── urls.py**
+**│   └── wsgi.py**
+**├── blog/**
+**│   ├── models.py**
+**│   ├── views.py**
+**│   ├── forms.py**
+**│   ├── urls.py**
+**│   ├── admin.py**
+**│   ├── templates/**
+**│   │   └── blog/**
+**│   └── static/**
+**├── manage.py**
+**├── requirements.txt**
+**└── README.md**
 
-Create test posts with various tags
 
-Test permissions by editing others’ posts (should fail)
+---
 
-Test search and tag filtering
+## **🔌 API Endpoints**
 
-Test commenting functionality
+**Endpoint**	**Method**	**Description**	**Auth Required**
+
+**/register/**	**GET, POST**	**User registration**	**No**
+**/login/**	**GET, POST**	**User login**	**No**
+**/logout/**	**POST**	**User logout**	**Yes**
+**/profile/**	**GET, POST**	**View/edit profile**	**Yes**
+**/posts/**	**GET**	**List all posts**	**No**
+**/post/new/**	**GET, POST**	**Create new post**	**Yes**
+**/post/<id>/**	**GET**	**View single post**	**No**
+**/post/<id>/update/**	**GET, POST**	**Update post**	**Yes (Author)**
+**/post/<id>/delete/**	**GET, POST**	**Delete post**	**Yes (Author)**
+**/search/**	**GET**	**Search posts**	**No**
+**/tags/<slug>/**	**GET**	**Filter by tag**	**No**
 
 
 
 ---
 
-🐛 Known Issues
+## **🧪 Testing**
 
-No image upload for posts yet
+**Create test users through registration**
 
-Search could be improved with full-text search
+**Create test posts with various tags**
 
-No email notifications for comments
+**Test permissions by editing others' posts (should fail)**
 
+**Test search and tag filtering**
 
-
----
-
-🚀 Future Enhancements
-
-Rich text editor
-
-Image uploads
-
-Email notifications
-
-Draft posts
-
-Post view counter
+**Test commenting functionality**
 
 
 
 ---
 
-👤 Author
+## **🐛 Known Issues**
 
-Edidiong Aquatang
-Program: ALX Software Engineering – Back-End Track
-Location: Nigeria
+**No image upload for posts yet**
 
+**Search could be improved with full-text search**
 
----
-
-🙏 Acknowledgments
-
-ALX Africa for the opportunity and guidance
-
-Django & Django REST Framework documentation
-
-django-taggit
-
-Open-source community
+**No email notifications for comments**
 
 
 
 ---
 
-Project Status: ✅ Complete
-Last Updated: December 2025
+## **🚀 Future Enhancements**
+
+**Rich text editor**
+
+**Image uploads**
+
+**Email notifications**
+
+**Draft posts**
+
+**Post view counter**
+
+
+
+---
+
+## **👤 Author**
+
+**Edidiong Aquatang**
+**Program: ALX Software Engineering – Back-End Track**
+**Location: Nigeria**
+
+
+---
+
+## **🙏 Acknowledgments**
+
+**ALX Africa for the opportunity and guidance**
+
+**Django & Django REST Framework documentation**
+
+**django-taggit**
+
+**Open-source community**
+
+
+
+---
+
+**Project Status: ✅ Complete**
+**Last Updated: December 2025**
 
 ---
 
