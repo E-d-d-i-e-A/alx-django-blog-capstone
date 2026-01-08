@@ -55,7 +55,7 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git
 cd Alx_DjangoLearnLab/django_blog
 
-## **2. Create Virtual Environment**
+### **2. Create Virtual Environment**
 
 ```bash
 python -m venv venv
@@ -68,27 +68,32 @@ On Mac/Linux
 
 source venv/bin/activate
 
-3. Install dependencies
+### **3. Install dependencies**
+```bash
 
 pip install -r requirements.txt
 
-4. Apply migrations
 
+### **4. Apply migrations**
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
 
-5. Create superuser (admin)
-
+### **5. Create superuser (admin)**
+```bash
 python manage.py createsuperuser
 
 Follow the prompts to create your admin account.
 
-6. Run the development server
+### **6. Run the development server**
 
+```bash
 python manage.py runserver
 
-7. Access the application
+### **7. Access the application
 
+```bash
 Homepage: http://127.0.0.1:8000/
 
 Posts List: http://127.0.0.1:8000/posts/
