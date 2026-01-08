@@ -155,8 +155,11 @@ Access the admin panel at:
 http://127.0.0.1:8000/admin/
 Admins can:
  • Manage users
+
  • Moderate posts and comments
+
  • Manage tags
+
  • View system data
 
 
@@ -253,9 +256,13 @@ No
 
 ## **🧪 Testing**
  • Register multiple users
+
  • Create posts with different tags
+
  • Attempt editing another user’s post (should fail)
+
  • Test searching and filtering
+
  • Add comments to posts
 
 
@@ -265,7 +272,9 @@ No
 ## **🐛 Known Issues**
 
  • No image upload for posts yet
+
  • Search is basic (not full-text)
+
  • No email notifications
 
 
@@ -275,10 +284,15 @@ No
 ## **🚀 Future Enhancements**
 
  • Rich text editor
+
  • Image uploads
+
  • Email notifications
+
  • Draft posts
+
  • Post view counter
+
  • Social sharing
 
 
