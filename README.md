@@ -163,6 +163,14 @@ Admins can:
 
 ---
 
+## **📦 Project Files (ZIP Notice)**
+Due to power and hardware limitations, the full Django project is provided as a compressed ZIP file in this repository.
+Please download and extract the ZIP to access the complete source code.
+
+
+
+---
+
 ## **🗂️ Project Structure**
 
 django_blog/
