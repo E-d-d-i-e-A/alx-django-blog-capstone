@@ -53,6 +53,7 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 ### **1. Clone the repository**
 
 git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git
+
 cd Alx_DjangoLearnLab/django_blog
 
 ---
