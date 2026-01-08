@@ -1,195 +1,295 @@
-# Django Blog Platform  
-**ALX Software Engineering – Capstone Project**
+Django Blog Platform API
 
-## 📌 Overview
-The Django Blog Platform is a full-featured web application built with Django as part of the ALX Software Engineering Capstone Project. The project demonstrates core backend development skills such as user authentication, CRUD operations, relational database modeling, permissions, form handling, tagging, and search functionality.
+A full-featured blogging platform built with Django and Django REST Framework, featuring user authentication, post management, commenting, tagging, and search functionality.
 
-The application allows users to create accounts, publish blog posts, comment on posts, organize content with tags, and search for posts. Permission rules ensure that only content authors can edit or delete their own posts.
 
 ---
 
-## 🎯 Project Objectives
-- Build a complete Django web application from scratch
-- Implement secure user authentication and authorization
-- Apply CRUD operations using Django class-based views
-- Demonstrate real-world features such as search, tagging, and permissions
-- Present a working application through a Loom demo video
+🚀 Features
+
+Core Functionality
+
+✅ User registration and authentication
+✅ User profile management
+✅ Create, read, update, and delete blog posts
+✅ Comment on posts
+✅ Tag posts with multiple categories
+✅ Search posts by title, content, or tags
+✅ Filter posts by specific tags
+
+Security & Permissions
+
+✅ Session-based authentication
+✅ Permission-based access control (only authors can edit/delete their content)
+✅ CSRF protection on all forms
+✅ Secure password hashing
+
+User Experience
+
+✅ Responsive design for mobile and desktop
+✅ Pagination (5 posts per page)
+✅ Success/error messages for all actions
+✅ Clean, modern UI with smooth animations
+
 
 ---
 
-## 🚀 Features
+🛠️ Technologies Used
 
-### Core Features
-- User registration, login, and logout
-- User profile management
-- Create, read, update, and delete blog posts
-- Commenting system for blog posts
-- Tag posts using multiple tags
-- Filter posts by tag
-- Search posts by title, content, or tags
-- Pagination (5 posts per page)
+Backend: Django 4.2
+Database: SQLite (development)
+Authentication: Django built-in authentication
+Tagging: django-taggit
+Frontend: HTML5, CSS3, JavaScript
+Version Control: Git & GitHub
 
-### Security & Permissions
-- Session-based authentication
-- Only post authors can edit or delete their posts
-- Only comment authors can edit or delete their comments
-- CSRF protection on all forms
-- Secure password hashing using Django authentication system
-
-### User Experience
-- Clean and responsive interface
-- Success and error feedback messages
-- Simple and intuitive navigation
 
 ---
 
-## 🛠️ Technologies Used
-- **Backend:** Django  
-- **Database:** SQLite (development)  
-- **Authentication:** Django built-in authentication  
-- **Tagging:** django-taggit  
-- **Frontend:** HTML, CSS, JavaScript  
-- **Version Control:** Git & GitHub  
+📋 Prerequisites
+
+Python 3.8 or higher
+pip (Python package manager)
+Git
+
 
 ---
 
-## 📂 Project Structure
-django_blog/ ├── django_blog/ │   ├── settings.py │   ├── urls.py │   └── wsgi.py ├── blog/ │   ├── models.py │   ├── views.py │   ├── forms.py │   ├── urls.py │   ├── admin.py │   ├── templates/ │   └── static/ ├── manage.py ├── requirements.txt └── README.md
-Copy code
+🔧 Installation & Setup
 
----
+1. Clone the repository
 
-## 🔧 Installation & Setup
+git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git
+cd Alx_DjangoLearnLab/django_blog
 
-### Prerequisites
-- Python 3.8 or higher
-- pip
-- Git
+2. Create virtual environment
 
-### Steps
-1. Clone the repository:
-git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git cd Alx_DjangoLearnLab/django_blog
-Copy code
-
-2. Create and activate a virtual environment:
 python -m venv venv
-Copy code
 
-Windows:
+On Windows
+
 venv\Scripts\activate
-Copy code
 
-Mac/Linux:
+On Mac/Linux
+
 source venv/bin/activate
-Copy code
 
-3. Install dependencies:
+3. Install dependencies
+
 pip install -r requirements.txt
-Copy code
 
-4. Apply migrations:
-python manage.py makemigrations python manage.py migrate
-Copy code
+4. Apply migrations
 
-5. Create a superuser (optional):
+python manage.py makemigrations
+python manage.py migrate
+
+5. Create superuser (admin)
+
 python manage.py createsuperuser
-Copy code
 
-6. Run the development server:
+Follow the prompts to create your admin account.
+
+6. Run the development server
+
 python manage.py runserver
-Copy code
 
-7. Open in browser:
-- Home: http://127.0.0.1:8000/
-- Posts: http://127.0.0.1:8000/posts/
-- Admin: http://127.0.0.1:8000/admin/
+7. Access the application
 
----
+Homepage: http://127.0.0.1:8000/
+Posts List: http://127.0.0.1:8000/posts/
+Admin Panel: http://127.0.0.1:8000/admin/
 
-## 📖 Usage Guide
-
-### For Users
-- Register an account and log in
-- Create new blog posts with tags
-- Comment on posts
-- Search posts using keywords
-- Filter posts by clicking on tags
-
-### For Admin
-- Access the admin panel to manage users, posts, and comments
 
 ---
 
-## 🔌 Application Endpoints
-- `/register/` – User registration  
-- `/login/` – User login  
-- `/logout/` – User logout  
-- `/profile/` – User profile  
-- `/posts/` – List all posts  
-- `/post/new/` – Create post  
-- `/post/<id>/` – View post  
-- `/post/<id>/update/` – Update post (author only)  
-- `/post/<id>/delete/` – Delete post (author only)  
-- `/search/` – Search posts  
-- `/tags/<slug>/` – Filter posts by tag  
+📖 Usage Guide
+
+For Users
+
+Register an Account
+
+Click "Register" in the navigation
+
+Fill in username, email, and password
+
+You'll be automatically logged in
+
+
+Create a Post
+
+Click "New Post" after logging in
+
+Enter title, content, and tags (comma-separated)
+
+Click "Create Post"
+
+
+Comment on Posts
+
+Open any post
+
+Scroll to the comments section
+
+Write your comment and click "Post Comment"
+
+
+Search for Posts
+
+Use the search bar in the navigation
+
+Search by title, content, or tags
+
+
+Filter by Tags
+
+Click any tag badge to see all posts with that tag
+
+
+For Administrators
+
+Access the admin panel at /admin/ to:
+
+Manage all users
+
+Moderate posts and comments
+
+View system statistics
+
+
 
 ---
 
-## 🧪 Testing
-- User registration and authentication
-- Post creation, update, and deletion
-- Comment creation and deletion
-- Permission enforcement
-- Search and tag filtering
+🗂️ Project Structure
+
+django_blog/
+├── django_blog/
+│   ├── settings.py      # Project settings
+│   ├── urls.py          # Main URL routing
+│   └── wsgi.py
+├── blog/
+│   ├── models.py        # Database models (Post, Comment)
+│   ├── views.py         # View logic
+│   ├── forms.py         # Custom forms
+│   ├── urls.py          # App URL routing
+│   ├── admin.py         # Admin configuration
+│   ├── templates/
+│   │   └── blog/
+│   │       ├── base.html
+│   │       ├── post_list.html
+│   │       ├── post_detail.html
+│   │       ├── post_form.html
+│   │       └── ...
+│   └── static/
+│       └── blog/
+│           ├── css/
+│           └── js/
+├── manage.py
+├── requirements.txt
+└── README.md
+
 
 ---
 
-## 🐛 Known Limitations
-- No image upload functionality
-- No email notifications
-- Uses SQLite (development only)
+🔌 API Endpoints
+
+Endpoint | Method | Description | Auth Required
+/register/ | GET, POST | User registration | No
+/login/ | GET, POST | User login | No
+/logout/ | POST | User logout | Yes
+/profile/ | GET, POST | View/edit profile | Yes
+/posts/ | GET | List all posts | No
+/post/new/ | GET, POST | Create new post | Yes
+/post/<id>/ | GET | View single post | No
+/post/<id>/update/ | GET, POST | Update post | Yes (Author)
+/post/<id>/delete/ | GET, POST | Delete post | Yes (Author)
+/post/<id>/comments/new/ | POST | Add comment | Yes
+/comment/<id>/update/ | GET, POST | Update comment | Yes (Author)
+/comment/<id>/delete/ | GET, POST | Delete comment | Yes (Author)
+/search/ | GET | Search posts | No
+/tags/<slug>/ | GET | Filter by tag | No
+
 
 ---
 
-## 🚀 Future Improvements
-- Image uploads for posts
-- Rich text editor
-- Email notifications
-- Draft posts
-- User following system
-- Post analytics
+🧪 Testing
+
+Create test users through registration
+
+Create test posts with various tags
+
+Test permissions by trying to edit others' posts (should fail)
+
+Test search with different queries
+
+Test commenting on posts
+
+Test tag filtering by clicking tag badges
+
+
 
 ---
 
-## 🎥 Presentation
-A Loom video demonstrating the application in action was recorded and submitted as required by ALX.  
-The video shows:
-- User registration
-- Post creation
-- Commenting
-- Search and tag filtering  
-(No code walkthrough was included.)
+🐛 Known Issues
+
+No image upload for posts yet
+
+Search is case-insensitive but could be improved with full-text search
+
+No email notifications for comments
+
+
 
 ---
 
-## 👨‍💻 Author
-**Edidiong Aquatang**  
-ALX Software Engineering – Back-End Track  
-GitHub: https://github.com/E-d-d-i-e-A  
-Location: Lagos, Nigeria  
+🚀 Future Enhancements
+
+Rich text editor for post content
+
+Image upload for posts
+
+User follow/unfollow system
+
+Email notifications
+
+Draft post functionality
+
+Post view counter
+
+Social media sharing
+
+
 
 ---
 
-## 🙏 Acknowledgements
-- **ALX Africa** for the learning structure and guidance  
-- **Django Documentation** for reference and best practices  
-- **django-taggit** for tag management  
-- The **open-source community** for tools and resources  
+👨‍💻 Author
+
+Edidiong Aquatang
+Location: Nigeria
+Program: ALX Software Engineering – Back-End Track
+
 
 ---
 
-## 📄 License
-This project was created for educational purposes as part of the ALX Software Engineering Capstone Project.
+📝 License
 
-**Project Status:** ✅ Completed  
-**Last Updated:** December 2025
+This project is created as part of the ALX Software Engineering Capstone Project.
+
+
+---
+
+🙏 Acknowledgments
+
+ALX Africa for the opportunity and guidance
+Django and Django REST Framework documentation
+The open-source community
+
+
+---
+
+Project Status
+
+✅ Complete
+Last Updated: December 2025
+ALX Capstone Project – Week 5 Final Submission
+
+
