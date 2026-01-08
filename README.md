@@ -55,8 +55,9 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git
 cd Alx_DjangoLearnLab/django_blog
 
-2. Create virtual environment
+## **2. Create Virtual Environment**
 
+```bash
 python -m venv venv
 
 On Windows
