@@ -48,24 +48,16 @@ A full-featured blogging platform built with Django and Django REST Framework, f
 
 ---
 
-## 🔧 Installation & Setup
+## 🛠️ **Installation & Setup**
 
 ### **1. Clone the repository**
 ```bash
 git clone https://github.com/E-d-d-i-e-A/Alx_DjangoLearnLab.git
 cd Alx_DjangoLearnLab/django_blog
+## **2. Create Virtual Environment**
 
-### **2. Create Virtual Environment**
 ```bash
 python -m venv venv
-
-On Windows
-
-venv\Scripts\activate
-
-On Mac/Linux
-
-source venv/bin/activate
 
 ### **3. Install dependencies**
 ```bash
